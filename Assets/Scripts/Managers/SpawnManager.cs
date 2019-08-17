@@ -58,7 +58,7 @@ public class SpawnManager : MonoBehaviour
         if (waypointNum == 1)
         {
             snowMan.name = "Snowman1";
-            
+
         }
         if (waypointNum == 2)
         {
@@ -79,7 +79,7 @@ public class SpawnManager : MonoBehaviour
     }
     public void SnowballSpawner()
     {
-        
+
 
         snowmanNum = Random.Range(0, 3);
         Vector3 spawnPos = new Vector3(0, 0, -3);
