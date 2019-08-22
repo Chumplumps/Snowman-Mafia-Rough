@@ -16,27 +16,26 @@ public class SpawnManager : MonoBehaviour
     public float snowballTimer;
     public float snowmanTimer;
     private GameObject[] newSnowMan = new GameObject[3];
-    // Start is called before the first frame update
     
+    // Start is called before the first frame update
+
     void Start()
     {
         snowmanWaypoint[0] = GameObject.Find("WaypointLeft");
         snowmanWaypoint[1] = GameObject.Find("WaypointMiddle");
         snowmanWaypoint[2] = GameObject.Find("WaypointRight");
-
+       
        
 
 
     }
-
+    private void FixedUpdate()
+    {
+       
+    }
     // Update is called once per frame
     void Update()
-    {
-
-        
-           
-        
-       
+    {                           
         //timer for snowman spawn
         snowmanTimer += Time.deltaTime;
         if (snowmanTimer >2f)
@@ -51,9 +50,6 @@ public class SpawnManager : MonoBehaviour
             SnowballSpawner();
             snowballTimer = 0;
         }
-
-
-
     }
    
     //spawn snowman at random waypoint
@@ -63,7 +59,7 @@ public class SpawnManager : MonoBehaviour
         waypointNum = Random.Range(0, 3);
         //instantiate new snowman
        newSnowMan[waypointNum]= Instantiate(snowMan, snowmanWaypoint[waypointNum].transform.position, Quaternion.identity);
-       
+        
        
 
     }
