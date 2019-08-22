@@ -21,7 +21,7 @@ public class EnemySnowball : MonoBehaviour
     void Update()
     {
         spawned += Time.deltaTime;
-        if (spawned > 2)
+        if (spawned > 4)
         {
             Destroy(gameObject);
         }

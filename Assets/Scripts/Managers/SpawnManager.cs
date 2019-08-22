@@ -39,7 +39,7 @@ public class SpawnManager : MonoBehaviour
        
         //timer for snowman spawn
         snowmanTimer += Time.deltaTime;
-        if (snowmanTimer > 4)
+        if (snowmanTimer >2f)
         {
             SnowmanSpawner();
             snowmanTimer = 0;
