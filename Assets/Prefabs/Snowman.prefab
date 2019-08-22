@@ -344,14 +344,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e6c9f3d46c2404faa58271f28e3a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnowmenWaypoints:
-  - {fileID: 849932560272612798}
+  snowmanWaypoint: []
   snowMen:
   - {fileID: 849932560272612798}
   snowBall: {fileID: 4879609225830894664, guid: 7f46bfdafa07f4b4bb51eda8774af238,
     type: 3}
-  num: 0
-  spawnTimer: 0
+  snowMan: {fileID: 0}
+  waypointNum: 0
+  snowmanNum: 0
+  snowballTimer: 0
+  snowmanTimer: 0
 --- !u!114 &2738217600908604426
 MonoBehaviour:
   m_ObjectHideFlags: 0
