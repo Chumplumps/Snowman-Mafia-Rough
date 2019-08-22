@@ -264,7 +264,6 @@ GameObject:
   - component: {fileID: 7615708259963279502}
   - component: {fileID: 7615708259963279503}
   - component: {fileID: 7615708259963279496}
-  - component: {fileID: 2883999184305055791}
   - component: {fileID: 2738217600908604426}
   m_Layer: 0
   m_Name: Snowman
@@ -281,7 +280,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7615708259963279501}
   m_LocalRotation: {x: -0.12581795, y: 0, z: 0, w: 0.99205333}
-  m_LocalPosition: {x: -3.33, y: 14.59, z: 105.41}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.2388, y: 1.2388, z: 1.2388}
   m_Children:
   - {fileID: 7615708261361535215}
@@ -332,28 +331,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 114
   m_CollisionDetection: 0
---- !u!114 &2883999184305055791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7615708259963279501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57e6c9f3d46c2404faa58271f28e3a26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snowmanWaypoint: []
-  snowMen:
-  - {fileID: 849932560272612798}
-  snowBall: {fileID: 4879609225830894664, guid: 7f46bfdafa07f4b4bb51eda8774af238,
-    type: 3}
-  snowMan: {fileID: 0}
-  waypointNum: 0
-  snowmanNum: 0
-  snowballTimer: 0
-  snowmanTimer: 0
 --- !u!114 &2738217600908604426
 MonoBehaviour:
   m_ObjectHideFlags: 0
