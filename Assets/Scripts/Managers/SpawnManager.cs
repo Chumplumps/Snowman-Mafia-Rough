@@ -56,23 +56,28 @@ public class SpawnManager : MonoBehaviour
 
     }
    
+    //spawn snowman at random waypoint
     public void SnowmanSpawner()
     {
-        waypointNum = Random.Range(0, 3);
         
+        waypointNum = Random.Range(0, 3);
+        //instantiate new snowman
        newSnowMan[waypointNum]= Instantiate(snowMan, snowmanWaypoint[waypointNum].transform.position, Quaternion.identity);
        
-        Debug.Log("if you got to here you are doing kinda good");
+       
 
     }
+    //spawn snowball at snowman location
     public void SnowballSpawner()
     {
 
 
         snowmanNum = Random.Range(0, 3);
         Vector3 spawnPos = new Vector3(0, 0, -3);
+        //only spawn snowball if newsnowman[snowmanNum] exists
         if (newSnowMan[snowmanNum] != null && !newSnowMan[snowmanNum].Equals(null))
         {
+            //instantiate snowball at random newsnowman position 
             Instantiate(snowBall, newSnowMan[snowmanNum].transform.position + spawnPos, Quaternion.identity);
 
         }
